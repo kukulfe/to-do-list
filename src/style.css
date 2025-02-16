@@ -1,6 +1,1 @@
-.button {
-  width: 200px;
-  height: 30px;
-  background-color: brown;
-  color: aquamarine;
-}
+@import "tailwindcss";

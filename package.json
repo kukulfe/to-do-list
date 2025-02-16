@@ -29,6 +29,8 @@
     "vite": "^6.0.5"
   },
   "dependencies": {
-    "gsap": "^3.12.7"
+    "@tailwindcss/vite": "^4.0.6",
+    "gsap": "^3.12.7",
+    "tailwindcss": "^4.0.6"
   }
 }
