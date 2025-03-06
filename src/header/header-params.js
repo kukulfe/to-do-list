@@ -10,18 +10,35 @@ const headerParams = {
     "justify-between",
     "flex",
     "items-center",
+    "dark:border-white",
+    "duration-200",
   ],
 };
 
 const titleParams = {
   tagName: "h1",
   text: "To-Do",
-  style: ["text-cyan-600", "font-medium", "text-3xl"],
+  style: [
+    "text-cyan-600",
+    "font-medium",
+    "text-3xl",
+    "dark:text-white",
+    "duration-200",
+  ],
 };
 
 const buttonParams = {
   tagName: "button",
-  style: ["w-[40px]", "h-[40px]", "rounded-full", "bg-cyan-600", "relative"],
+  style: [
+    "w-[40px]",
+    "h-[40px]",
+    "rounded-full",
+    "bg-cyan-600",
+    "relative",
+    "dark:bg-white",
+    "cursor-pointer",
+    "duration-200",
+  ],
 };
 
 const wrapperIcon = {
@@ -37,8 +54,13 @@ const wrapperIcon = {
     "translate-y-[-50%]",
     "bg-center",
     "bg-no-repeat",
+    "bg-cover",
     "bg-[url(/sun-icon.svg)]",
+    "dark:bg-[url(/moon.svg)]",
+    "duration-200",
   ],
 };
 
 export { headerParams, titleParams, buttonParams, wrapperIcon };
+
+// хочу фон сделать slate 900 или 950 на фон (ушла есть пиццу)

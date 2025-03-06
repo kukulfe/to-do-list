@@ -16,7 +16,16 @@ const headerCreator = () => {
   headerElement.insertAdjacentElement("beforeend", buttonElement);
   headerElement.insertAdjacentElement("afterbegin", titleElement);
 
+  buttonElement.addEventListener("click", darkMode);
+
   return headerElement;
+};
+
+const darkMode = () => {
+  const body = document.querySelector("body");
+  if (body) {
+    body.classList.toggle("dark");
+  }
 };
 
 export default headerCreator;
