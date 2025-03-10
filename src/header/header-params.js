@@ -12,6 +12,7 @@ const headerParams = {
     "items-center",
     "dark:border-white",
     "duration-200",
+    "mb-5",
   ],
 };
 
