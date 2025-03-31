@@ -1,4 +1,3 @@
-// создать параметры для кнопки, её заголовка и обертки картинки
 const btnParans = {
   tagName: "button",
   style: ["flex", "items-center", "gap-4", "m-auto", "cursor-pointer"],
@@ -30,5 +29,4 @@ const btnImageParams = {
     "duration-200",
   ],
 };
-// не забыть экспортировать
 export { btnParans, btnTitleParams, btnImageParams };
