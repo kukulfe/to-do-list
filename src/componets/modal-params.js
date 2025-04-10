@@ -72,10 +72,49 @@ const fakeCheckboxParams = {
 
 const textareaParams = {
   tagName: "textarea",
-  style: ["outline-none", "w-full", "max-h-[350px]", "min-h-[200px]"],
+  style: ["outline-none", "w-full", "max-h-[350px]", "min-h-[200px]", "mb-4"],
   attributes: {
     placeholder: "Text",
   },
+};
+
+const wrapperButtonsParams = {
+  tagName: "div",
+  style: ["flex", "gap-2", "justify-end"],
+};
+
+const addBtnParams = {
+  tagName: "button",
+  style: [
+    "bg-cyan-600",
+    "text-xl",
+    "font-medium",
+    "py-1",
+    "px-4",
+    "font-medium",
+    "rounded-xl",
+    "text-white",
+    "min-w-[94px]",
+    "cursor-pointer",
+  ],
+  text: "Add",
+};
+
+const cancelBtnParams = {
+  tagName: "button",
+  style: [
+    "bg-red-800",
+    "text-xl",
+    "font-medium",
+    "py-1",
+    "px-4",
+    "font-medium",
+    "rounded-xl",
+    "text-white",
+    "min-w-[94px]",
+    "cursor-pointer",
+  ],
+  text: "Cancel",
 };
 
 export {
@@ -87,4 +126,7 @@ export {
   checkboxParams,
   fakeCheckboxParams,
   textareaParams,
+  wrapperButtonsParams,
+  addBtnParams,
+  cancelBtnParams,
 };

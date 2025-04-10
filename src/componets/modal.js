@@ -1,5 +1,7 @@
 import creator from "../core/creator.js";
 import {
+  addBtnParams,
+  cancelBtnParams,
   checkboxParams,
   fadeBlockParams,
   fakeCheckboxParams,
@@ -7,6 +9,7 @@ import {
   inputParams,
   labelParams,
   textareaParams,
+  wrapperButtonsParams,
   wrapperHeaderParams,
 } from "./modal-params.js";
 
@@ -29,6 +32,13 @@ const createModal = () => {
 
   const texarea = creator(textareaParams);
   formModal.append(texarea);
+
+  const wrapperButtons = creator(wrapperButtonsParams);
+  formModal.append(wrapperButtons);
+  const addBtn = creator(addBtnParams);
+  const cancelBtn = creator(cancelBtnParams);
+  wrapperButtons.append(addBtn, cancelBtn);
+
   appContainer.append(fadeBlock);
   appContainer.append(formModal);
 };
