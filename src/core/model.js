@@ -13,3 +13,16 @@
 // const getDataFromStorage = () => {
 //     return parseJSON(localStorage.getItem('notes'))
 // }
+
+// const createStructure = () => {
+//     const structure = {
+//         favorite: [],
+//         regular: []
+//     }
+
+//     const dataFromStorage = getDataFromStorage()
+
+//     if (!dataFromStorage) {
+//         setDatatoStorage(structure)
+//     }
+// }
