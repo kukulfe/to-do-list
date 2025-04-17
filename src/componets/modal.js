@@ -41,6 +41,13 @@ const createModal = () => {
 
   appContainer.append(fadeBlock);
   appContainer.append(formModal);
+
+  formModal.addEventListener("submit", (event) => formHandler(event));
+};
+
+const formHandler = (event) => {
+  event.preventDefault();
+  console.log(event);
 };
 
 export default createModal;
