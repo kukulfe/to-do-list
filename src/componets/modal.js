@@ -1,4 +1,5 @@
 import creator from "../core/creator.js";
+import handlerData from "../core/model.js";
 import {
   addBtnParams,
   cancelBtnParams,
@@ -47,7 +48,8 @@ const createModal = () => {
 
 const formHandler = (event) => {
   event.preventDefault();
-  console.log(event);
+  const dataFromForm = new FormData(event.target);
+  handlerData(dataFromForm);
 };
 
 export default createModal;

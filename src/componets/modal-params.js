@@ -49,6 +49,7 @@ const inputParams = {
   attributes: {
     type: "text",
     placeholder: "Title",
+    name: "title",
   },
 };
 
@@ -62,6 +63,7 @@ const checkboxParams = {
   style: ["real-checkbox", "w-0", "h-0", "absolute", "z-[-1]"],
   attributes: {
     type: "checkbox",
+    name: "checkbox",
   },
 };
 
@@ -75,6 +77,7 @@ const textareaParams = {
   style: ["outline-none", "w-full", "max-h-[350px]", "min-h-[200px]", "mb-4"],
   attributes: {
     placeholder: "Text",
+    name: "textarea",
   },
 };
 
