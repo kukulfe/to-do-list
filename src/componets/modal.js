@@ -1,5 +1,5 @@
 import creator from "../core/creator.js";
-import handlerData from "../core/model.js";
+import handlerData, { dataStructure } from "../core/model.js";
 import {
   addBtnParams,
   cancelBtnParams,
@@ -13,6 +13,7 @@ import {
   wrapperButtonsParams,
   wrapperHeaderParams,
 } from "./modal-params.js";
+import creatorList from "./notes-list.js";
 
 const createModal = () => {
   const appContainer = document.querySelector("#app");
@@ -50,6 +51,7 @@ const formHandler = (event) => {
   event.preventDefault();
   const dataFromForm = new FormData(event.target);
   handlerData(dataFromForm);
+  creatorList(dataStructure.favorite);
 };
 
 export default createModal;

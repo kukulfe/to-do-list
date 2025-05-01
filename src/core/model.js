@@ -24,8 +24,9 @@ const createStructure = () => {
 
   if (!dataFromStorage) {
     setDatatoStorage(structure);
+    return;
   }
-  return structure;
+  return dataFromStorage;
 };
 
 const handlerData = (data) => {
@@ -47,3 +48,4 @@ const handlerData = (data) => {
 const dataStructure = createStructure();
 
 export default handlerData;
+export { dataStructure };
