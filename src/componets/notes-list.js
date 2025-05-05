@@ -34,6 +34,7 @@ const creatorList = (arrayNotes) => {
     const wrapperDateAndButtons = creator(wrapperDateAndButtonsParams);
 
     const date = creator(dateParams);
+    date.innerText = "Created 08.06.25 at 18:46";
     const wrapperButtons = creator(wrapperButtonsParams);
     const btnStatus = creator(btnStatusParams);
     const btnEdit = creator(btnEditParams);

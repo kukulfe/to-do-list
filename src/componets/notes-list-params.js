@@ -1,6 +1,6 @@
 const listParams = {
   tagName: "ul",
-  style: [],
+  style: ["flex", "flex-col", "gap-4"],
   attributes: {
     id: "list",
   },
@@ -8,12 +8,19 @@ const listParams = {
 
 const noteItemParams = {
   tagName: "li",
-  style: [],
+  style: [
+    "border-solid",
+    "border-cyan-600",
+    "rounded-xl",
+    "border-2",
+    "py-2",
+    "px-4",
+  ],
 };
 
 const noteTopParams = {
   tagName: "div",
-  style: [],
+  style: ["flex", "justify-between", "w-full"],
 };
 
 const titleParams = {
@@ -23,12 +30,12 @@ const titleParams = {
 
 const wrapperDateAndButtonsParams = {
   tagName: "div",
-  style: [],
+  style: ["flex", "justify-between", "items-center", "gap-2"],
 };
 
 const dateParams = {
   tagName: "p",
-  style: [],
+  style: ["text-sm", "text-gray-600"],
 };
 const wrapperButtonsParams = {
   tagName: "div",
@@ -37,17 +44,41 @@ const wrapperButtonsParams = {
 
 const btnStatusParams = {
   tagName: "button",
-  style: [],
+  style: [
+    "bg-[url(/star-btn-black.svg)]",
+    "bg-center",
+    "bg-no-repeat",
+    "bg-cover",
+    "duration-200",
+    "w-6",
+    "h-6",
+  ],
 };
 
 const btnEditParams = {
   tagName: "button",
-  style: [],
+  style: [
+    "bg-[url(/edit-btn.svg)]",
+    "bg-center",
+    "bg-no-repeat",
+    "bg-cover",
+    "duration-200",
+    "w-6",
+    "h-6",
+  ],
 };
 
 const btnDeleteParams = {
   tagName: "button",
-  style: [],
+  style: [
+    "bg-[url(/trash-btn.svg)]",
+    "bg-center",
+    "bg-no-repeat",
+    "bg-cover",
+    "duration-200",
+    "w-6",
+    "h-6",
+  ],
 };
 
 const textParams = {
