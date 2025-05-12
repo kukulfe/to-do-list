@@ -10,7 +10,7 @@ const headerParams = {
     "justify-between",
     "flex",
     "items-center",
-    "dark:border-white",
+    "dark:border-gray-400",
     "duration-200",
     "mb-5",
   ],
@@ -23,7 +23,7 @@ const titleParams = {
     "text-cyan-600",
     "font-medium",
     "text-3xl",
-    "dark:text-white",
+    "dark:text-cyan-400",
     "duration-200",
   ],
 };

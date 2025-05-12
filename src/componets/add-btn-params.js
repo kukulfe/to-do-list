@@ -1,6 +1,6 @@
 const btnParans = {
   tagName: "button",
-  style: ["flex", "items-center", "gap-4", "m-auto", "cursor-pointer"],
+  style: ["flex", "items-center", "gap-4", "m-auto", "cursor-pointer", "mb-8"],
 };
 
 const btnTitleParams = {
@@ -10,7 +10,7 @@ const btnTitleParams = {
     "text-2xl",
     "text-cyan-600",
     "font-medium",
-    "dark:text-white",
+    "dark:text-cyan-400",
     "duration-200",
   ],
 };

@@ -1,6 +1,6 @@
 const listParams = {
   tagName: "ul",
-  style: ["flex", "flex-col", "gap-4"],
+  style: ["flex", "flex-col", "gap-4", "max-w-3xl", "m-auto", "w-[96%]"],
   attributes: {
     id: "list",
   },
@@ -11,6 +11,7 @@ const noteItemParams = {
   style: [
     "border-solid",
     "border-cyan-600",
+    "dark:border-gray-400",
     "rounded-xl",
     "border-2",
     "py-2",
@@ -25,7 +26,13 @@ const noteTopParams = {
 
 const titleParams = {
   tagName: "h6",
-  style: [],
+  style: [
+    "text-2xl",
+    "text-cyan-600",
+    "dark:text-cyan-400",
+    "max-w-[400px]",
+    "truncate",
+  ],
 };
 
 const wrapperDateAndButtonsParams = {
@@ -35,7 +42,7 @@ const wrapperDateAndButtonsParams = {
 
 const dateParams = {
   tagName: "p",
-  style: ["text-sm", "text-gray-600"],
+  style: ["text-sm", "text-gray-600", "dark:text-gray-500"],
 };
 const wrapperButtonsParams = {
   tagName: "div",
@@ -46,6 +53,7 @@ const btnStatusParams = {
   tagName: "button",
   style: [
     "bg-[url(/star-btn-black.svg)]",
+    "dark:bg-[url(/star-btn-black-dark.svg)]",
     "bg-center",
     "bg-no-repeat",
     "bg-cover",
@@ -59,6 +67,7 @@ const btnEditParams = {
   tagName: "button",
   style: [
     "bg-[url(/edit-btn.svg)]",
+    "dark:bg-[url(/edit-btn-dark.svg)]",
     "bg-center",
     "bg-no-repeat",
     "bg-cover",
@@ -72,6 +81,7 @@ const btnDeleteParams = {
   tagName: "button",
   style: [
     "bg-[url(/trash-btn.svg)]",
+    "dark:bg-[url(/trash-btn-dark.svg)]",
     "bg-center",
     "bg-no-repeat",
     "bg-cover",
@@ -83,7 +93,7 @@ const btnDeleteParams = {
 
 const textParams = {
   tagName: "p",
-  style: [],
+  style: ["dark:text-white", "max-w-[700px]", "truncate"],
 };
 export {
   listParams,
